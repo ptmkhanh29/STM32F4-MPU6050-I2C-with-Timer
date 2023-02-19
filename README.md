@@ -27,5 +27,10 @@ With:
 1. > Timer Prescaler is the value of the timer prescaler register (TIMx_PSC)
 2. > Timer Period is the value of the timer auto-reload register (TIMx_ARR)
 3. > Timer Clock Frequency is the frequency of the timer clock (TIMxCLK)
-Where: Prescaler = 99, Timer Period = 9999, Timer Clock Frequency = 100.000 Hz
-Thus: Time = (99+1)*(9999+1)/100000 = 1ms -> interrupt with 1ms
+
+- Where: Prescaler = 99, Timer Period = 9999, Timer Clock Frequency = 100 MHz
+- Thus: Time = (99+1)*(9999+1)/100MHz = 1ms -> interrupt with 1ms
+
+4. > Therefore, this configuration will generate a timer interrupt every 1ms with a clock frequency of 100MHz.
+
+![ngắt](https://user-images.githubusercontent.com/113729333/219968389-1a1478a0-dbe6-4f97-87ec-639e574204da.png)
